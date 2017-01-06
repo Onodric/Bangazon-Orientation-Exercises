@@ -80,3 +80,9 @@ Tuples are like lists, but are immutable. They can't be modified once defined. H
 1. Convert your tuple into a list.
 1. Use `extend()` to add three more animals to your zoo.
 1. Convert the list back into a tuple.
+
+## Classes
+
+#### Instructions
+
+Create a class that contains information about employees of a company and define methods to get employee name, job title, and start date.
