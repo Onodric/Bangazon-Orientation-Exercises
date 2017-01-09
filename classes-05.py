@@ -27,10 +27,12 @@ class Company(object):
         return self.employees
 
     def __str__(self):
-        employee_list = '{} Employee List\n-------------------------'.format(self.name)
+        employee_list = '{} Employee List\n-------------------------'.format(
+            self.name)
         for employee in self.employees:
             employee_list += '\n{}'.format(employee)
         return employee_list
+
 
     # Add the remaining methods to fill the requirements above
 
@@ -69,14 +71,14 @@ class Employee(object):
         return self.start_date
 
     def __str__(self):
-        employee_str = '{0}, {1}, started {2}'.format(self.get_name(), self.get_job_title(), self.get_start_date())
+        employee_str = '{0},\t {1},\t started {2}'.format(self.get_name(), self.get_job_title(), self.get_start_date())
         return employee_str
 
-matt = Employee("Matt", "McCord", "Badass", "2 Jan 2017")
-ben = Employee("Ben", "Marks", "Minion",  "2 Jan 2017")
-nate = Employee("Nathan", "Baker", "Hoopty", "2 Jan 2017")
 steve = Employee("Steve", "Brownlee", "Owner")
-bang_employees = [matt, ben, nate, steve]
+matt = Employee("Matt", "McCord", "Badass", "2 Jan 2017")
+nate = Employee("Nathan", "Baker", "Hoopty", "2 Jan 2017")
+ben = Employee("Ben", "Marks", "Minion",  "2 Jan 2017")
+bang_employees = [steve, matt, ben, nate]
 
 c16_fake_co = Company("Bangazon, LLC", bang_employees)
 
